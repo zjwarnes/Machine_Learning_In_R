@@ -1,9 +1,9 @@
-quality_check_visual <- function(data){
+quality_check_visual <- function(data, path.file){
 	
 	#need to separate for numeric values
 
 	#histograms
-	pdf("C:\\Users\\zjwar_000\\Documents\\R\\Graphs\\data.pdf")
+	pdf(path.file)
 	par(mfrow=c(1,4))
 	for( i in 1:4){
 		hist(data[,i], main=names(data)[i])
